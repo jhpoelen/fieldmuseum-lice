@@ -2,4 +2,5 @@
 {%- assign hash_first2 = hash | slice: 0,2 -%}
 {%- assign hash_second2 = hash | slice: 2,2 -%}
 {%- assign local_url = hash | prepend: "/" | prepend: hash_second2 | prepend: "/" | prepend: hash_first2 | prepend: "data/" %}
+{%- assign local_url = hash | prepend: "/" | prepend: hash_second2 | prepend: "/" | prepend: hash_first2 | prepend: site.data.version.data_location %}
 {{ local_url }}
