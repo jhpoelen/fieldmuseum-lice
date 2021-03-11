@@ -3,7 +3,7 @@ layout: default
 id: A biodiversity dataset graph
 ---
 {%- assign endpoint= "/data.json" | prepend: site.baseurl | prepend: site.url -%}
-{% capture provenance %}{%- include local_url_for_hash.html hash=site.data.version.archive -%}{% endcapture %}
+{% capture provenance %}{%- include local_url_for_hash.html hash=site.data.version.archive location=site.data.version.provenance_location -%}{% endcapture %}
 
 A biodiversity dataset graph: [{{ site.baseurl | prepend: site.url }}]({{ site.baseurl | prepend: site.url }}). {{ site.data.version.created_at | date: "%Y" }}. [{{ site.data.version.archive }}]({{ provenance }})
 
