@@ -2,4 +2,5 @@
 archive: "hash://sha256/8478d61dedc0a582566934724382c5fa79c2ca5756d6d39c47ea4ad2e7d07e69"
 preston: "0.2.5"
 created_at: "2021-02-26T19:14:43.666Z"
+data_location_old: "data/"
 data_location: "https://github.com/jhpoelen/fieldmuseum-lice/raw/main/data/"
